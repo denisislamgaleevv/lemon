@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans&family=Playfair+Display:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body , html{
+    overflow-x: hidden;
+}
+ 
+ 
+.all-container{
+    display: flex;
+    flex-direction: column  ;
+    background-color: #eaeaea;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.big-logo-wrapper{
+    display: flex;
+    background-color: #eaeaea;
+    height: 240px;
+    align-items: center;
+    
+    justify-content: center;
+}
+.shadow{
+    width: 90%;
+    background-color:#ffffff01;
+    height: 1px;
+   
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.menu-logo-image{
+    width: 85px;
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+.menu-container{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    justify-content: center;
+    background-color:  #eaeaea;
+}
+.menu{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 120px;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+ 
+.menu-a{
+    color: black;
+   
+    font-size: 16px;
+  
+    cursor: pointer;
+    text-decoration: none;
+}
+.menu-a:hover{
+    border-bottom: 1px solid #555555;   
+
+}
+.burger{
+    width: 35px;
+    display: none;
+}
+.line{
+    background-color: black;
+    width: 100%; 
+    height: 2px;
+    margin-bottom: 4px;
+}
+ 
+.item{
+    background: white;
+}
+
+.preview-btn{
+    width: 100px;
+    height: 28px;
+    background-color: white;
+    border: 1px solid #c2c2c2; 
+    border-radius: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    padding: 2px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.small-recipes{
+    width: 82%;
+    background-color: white;
+    height: 510px;
+    padding-left: 5.5%;
+    padding-right: 2.5%;
+    padding-top: 3%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.slick-prev:before, .slick-next:before {
+    color: #555555; 
+    position: relative;
+    font-size: 40px;
+}
+.slick-prev:before{
+    margin-left: -40px;
+}
+.slick-next:before{
+    margin-left: -30px;
+}
+.slick-dots li button:before {
+    top: 10px
+}
+@media screen and (max-width: 1000px){
+    .slick-prev:before{
+        margin-left: -20px;
+    }
+    .slick-dots li button:before {
+        top: 35px
+    }
+    .small-recipes{
+        height: 470px;
+        
+    }
+}
+@media screen and (max-width: 800px){
+    .slick-prev:before, .slick-next:before {
+        color: rgba(0, 0, 0, 0.7); 
+        font-size: 30px;
+    }
+    .slick-prev:before{
+        margin-left: -12px;   
+    }
+    .slick-dots li button:before {
+        top: 25px
+    }
+    .small-recipes{
+        height: 420px;
+        
+    }
+    .small-recipes-wrapper{
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+}
+.small-recipe{
+    display: flex;
+    align-items:start;
+    flex-direction: column;
+
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    
+}
+.small-recipe p{
+    padding: 15px ;
+    cursor: pointer;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    height: 22px;
+}
+.small-recipe img{
+    width: 90%;
+    
+}
+.small-recipes-wrapper{
+    display: flex;
+    align-items: center;
+    height: 550px;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 80px;
+    background-color:  #eaeaea;
+}
+.small-recipe-icons{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+    color: #555555; 
+    font-size: 12px;
+    width: 100%;
+    
+    padding-left: 15px;
+    white-space: nowrap;
+}
+.small-recipe-icons i{
+padding-top: 2px;
+}
+.small-recipe-icons img{
+    height: 10px;
+    width: 12px;
+    
+}
+.menu-a-container{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.502);
+}
+.cross-container {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 32px;
+        right: 28px;
+        z-index: 10;
+    display: none;
+  }
+  
+ 
+  
+  .cross::before,
+  .cross::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+     
+  }
+   
+  .cross::before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+     
+    transform: rotate(135deg) translateY(-18px) translateX(18px);  
+     
+  }
+  .cross::after{ position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  
+    transform:rotate(45deg)  translateY(18px) translateX(18px);  ;
+  }
+  
+  
+ 
+ 
+.cards{
+    height: 515px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 75px;
+}
+.error, .author{
+    height: 90%;
+    width:  40%;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+ 
+.author{
+    padding: 25px;
+     
+}
+.author-flex-container{
+    display: flex;
+}
+.sorry-text-container{
+
+    height: 85%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+}
+.sorry-text-container h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 34px;
+    padding-bottom: 15px;
+}
+.sorry-text-container b{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #a9a9a9;
+}
+
+.author h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    border-bottom: 2px solid #dddddd;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.avatar{
+    width: 130px;
+    height: 130px;
+    transform: scale(1.3); 
+    z-index: 2;
+}
+.author-round{
+    overflow: hidden;
+    border-radius: 50%;
+}
+.author-photo-container{
+    width: 100%;
+}
+.author-info-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.author-info-container h3{
+   
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+.author-info-container div{
+    padding-left: 20px;
+}
+.author-info-container p{
+   text-align: left;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 16px;
+}
+.author-icons{
+    color: #a9a9a9;
+    padding-top: 15px;
+    padding-bottom: 15px;
+     
+}
+.author-icons i {
+    padding-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.author-line{
+    border-bottom: 2px solid #dddddd;
+    width: 100%;
+    
+}
+.author h5{
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.signature{
+    
+    width: 150px;
+     
+}
+.signature-container{
+    padding-top: 20px;
+    float: right;
+    margin-left: 150px;
+}
+
+
+
+
+
+
+
+
+
+  
+@media screen  and (max-width: 600px) {
+    .big-logo-wrapper {
+      display: none;
+    }
+    .menu-a-container{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 120px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        width: 40%;
+        z-index: 5;
+        padding: 15px;
+        right: 0;
+         
+    }
+    .shadowNew{
+        background-color: #ffffff97;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+    .burger{
+        display: block; 
+        position: absolute;
+        top: 48px;
+        right: 34px;
+        z-index: 10;
+        
+    }
+    .menu-a{
+        padding: 10px;
+      
+        border-bottom: 1px solid #ffffff00;
+    }
+    .menu-container{
+        background-color: white;
+        
+        z-index: 11;
+        position: sticky;
+        top: 0;
+    }
+    .sticky-header{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    .menu{
+       box-shadow: none;
+       
+    }
+    .cross-container{
+        display: block;
+    }
+    .menu input{
+        position: absolute;
+        top: 44px;
+        left: 170px;
+
+        width: 140px;
+        border: 0;
+    }
+    .menu-logo-image{
+        position: absolute;
+        top: 38px;
+        left: 20px;
+        width: 100px;
+    }
+    .item{
+        width: 100%;
+    }
+    
+      .small-recipes{
+        display: flex;
+        flex-direction: column; 
+        padding-left: 3%;
+        width: 100%;
+        height: fit-content;
+        z-index: 6;
+        padding-bottom: 70px;
+        box-shadow: none;
+    }
+    .small-recipes-wrapper{
+        height: fit-content;
+        padding-bottom: 0;
+       
+    }
+    .small-recipe{
+        width: 50%;
+       
+         padding: 20px;
+         box-sizing: border-box;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+    }
+    .author-info-container p{
+        padding-right: 40px;
+    }
+    .small-slider{
+        display: none;
+    }
+    .small-recipe img{
+        width: 100%;
+    }
+    .small-recipe{
+        width: 100%;
+       
+    }
+    .small-recipe-icons{
+        padding-bottom: 20px;
+    }
+    .cards{
+      
+
+        height:fit-content;
+        width: 100%;
+        margin-top: 10%;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 75px;
+    }
+    .author{
+        width: 90%;
+      
+    }
+    .big-recipe-wrapper{
+        display: flex;
+       
+    }
+    .big-recipe-image-container{
+      width: 100%;
+      z-index: 5;
+    }
+    .big-recipe{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .big-recipe-right{
+        width: 94%;
+        padding-left: 3%;
+         
+        
+        margin-right: 0;
+        padding-right: 3%;
+        padding-bottom: 5%;
+    }
+    .big-recipe-right-text-btn-container{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .big-recipe-right-text-btn-container button{
+        margin-bottom: 20px; 
+        margin-top: 0;
+    }
+}

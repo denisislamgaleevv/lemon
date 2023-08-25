@@ -1,0 +1,195 @@
+
+.ingredients{
+    background-color: white;
+    width: 89%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    padding-left: 1%;
+    padding-bottom: 2%;
+}
+.ingredients-h3{
+    font-family: 'Playfair Display', serif;
+    padding: 20px;
+    font-size: 16px;
+   
+    color: #000000;
+}
+.ingredient-image {
+    transition: opacity 0.2s ease-in-out;
+}
+
+.ingredient-name {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    color: #555555;
+    pointer-events: none;
+}
+.ingredients-wrapper{
+    width: 100px;
+    float: left;
+    height: 200px;
+}
+.ingredients-wrapper:hover .ingredient-name {
+    opacity: 1;
+}
+
+
+.ingredients-wrapper:hover .ingredient-image {
+    opacity: 0.5;
+  
+}
+
+ 
+.big-recipe-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 'fit-content';
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 80px;
+    background-color:  #eaeaea;
+}
+.big-recipe-image-container{
+    background-image: url('https://static.tildacdn.com/tild6431-3938-4463-a135-653636396635/20191218_1324150_1.jpg'); 
+    width: 50%;
+    
+    background-size: cover;
+    background-position: left; 
+    background-repeat: no-repeat;
+    height: 435px;
+}
+.big-recipe{
+    width: 90%;
+     background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+   margin-top: 10%;
+  
+         
+}
+.big-recipe-right{
+    width: 100%;
+    padding-left: 3%;
+    height: 100%;
+     
+    
+    margin-right: 30px;
+    padding-right: 30px;
+}
+.big-recipe-text-container{
+    width: 100%;
+    height: 46.8%;
+    overflow: auto; 
+}
+.big-recipe-text-container::-webkit-scrollbar {
+    width: 2px; 
+  }
+  
+  .big-recipe-text-container::-webkit-scrollbar-thumb {
+    background-color: #555555;  
+  }
+  
+  .big-recipe-text-container::-webkit-scrollbar-track {
+    background-color: #dddddd; 
+  }
+.big-recipe-right h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #055555;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.big-recipe-right-text-btn-container{
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+.big-recipe-right-text-btn-container p{
+ font-family: 'Open Sans', sans-serif;
+ font-size: 16px;
+ color: #555555;
+}
+.big-recipe-ingredients{
+    padding-bottom: 30px;
+}
+.big-recipe-right p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+.big-recipe-right h4{
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+  
+@media screen  and (max-width: 600px) {
+    .ingredients img{
+        width: 80%;
+         
+    }
+    .ingredients-wrapper{
+        height: 150px;
+    }
+    .ingredients{
+        width: 100%;
+        padding-left: 20px;
+    }
+    
+    .big-recipe-wrapper{
+        display: flex;
+        height: 100%;
+        background-color:  #eaeaea;
+        padding-top: 10%;
+    }
+    .big-recipe-ingredients{
+        padding-left: 15px;
+    }
+    .big-recipe-text-container{
+        overflow: visible;
+    }
+    .big-recipe-image-container a{
+        
+        z-index: 5;
+      }
+    .big-recipe{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+    }
+    .big-recipe-right{
+        width: 94%;
+        padding-left: 3%;
+        
+        margin-right: 0;
+        padding-right: 3%;
+        padding-bottom: 5%;
+     
+    }
+    .big-recipe-right-text-btn-container{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .big-recipe-right-text-btn-container button{
+        margin-bottom: 20px; 
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,385 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans&family=Playfair+Display:wght@400;700&display=swap');
+
+.find-wrapper{
+    width: 100%;
+  
+    background-color:  #eaeaea;
+}
+.find-container{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 80px;
+  
+    background-color:  #eaeaea;
+}
+
+.find{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 120px;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  
+    padding-left: 10%;
+    padding-right: 10%;
+
+   
+}
+
+.find-input{
+    width: 160px;
+    height: 34px;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 65%;
+    font-size: 22px;
+    background-color: white;
+    border: 1px solid #c2c2c2; 
+    border-radius: 0;
+    padding-left: 5px;
+    margin-right: 2%;
+}
+.find-input:focus {
+    
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.4);
+    outline: none;
+  }
+.find-input::placeholder{
+    font-size: 18px
+}
+.input-href-a{
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
+.found-recipes-card a{
+    text-decoration: none;
+    color: black;
+}
+.find-btn{
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border: 1px solid #c2c2c2; 
+    border-radius: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    
+    cursor: pointer;
+    z-index: 10;
+}
+.find-btn:hover{
+    color: white;
+    background-color:  #c2c2c2; 
+}
+.arrow-left{
+    color: "#c2c2c2";
+    cursor: 'pointer'
+}
+.arrow-left:hover{
+    color:black
+}
+.card-error-wrapper{
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top: 5%;
+    background-color:  #ffffff;
+    margin-bottom: 75px;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
+   
+}
+.card-error{
+    height: 515px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ 
+.error{
+    background-image: url('../../images/error.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 25px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width:  40%;
+    background-color: white;
+}
+.error h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  
+    text-align: left;
+     
+      
+}
+ 
+.sorry-text-container{
+
+    height: 85%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+}
+.sorry-text-container h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 34px;
+    padding-bottom: 15px;
+}
+.sorry-text-container p{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #a9a9a9;
+    font-weight: 700;
+}
+.found-recipes-wrapper{
+    margin-top: 80px;
+    display: flex;
+  
+    justify-content: center;
+    width: 100%;
+    background-color: #eaeaea;
+}
+.found-recipes-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    flex-wrap: wrap;
+
+
+    width: 90%;
+    background-color: white;
+    
+    padding-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.found-recipes-card{
+    width: 25%;
+ /* height: 50%;*/
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:end;
+    
+}
+ 
+.found-recipes-cards img{
+    
+    width: 200px;
+    
+}
+.found-recipes{
+    width: 100%;
+    background-color:  #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.found-recipes-card p{
+    padding-top: 10px;
+ 
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    cursor: pointer;
+}
+.not-active{
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  .active {
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    
+    background-color: #055555;
+    color: #fff;
+    border-color:  #055555;
+  }
+
+  .pagination{
+    width: 100%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+  }
+.loading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 460px;
+}
+.loading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 90%;
+    background-color: white;    
+    height: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.loading h2{
+    padding-top: 60px;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #c2c2c2; 
+}
+@media screen and (max-width: 950px){
+     
+    .found-recipes-cards img{
+        width: 150px;
+        
+    }
+    
+}
+@media screen and (max-width: 700px){
+    .found-recipes-cards{
+        
+        width: 100%;
+        
+        
+    }
+    .found-recipes-cards img{
+        width: 150px;
+        
+    }
+    .found-recipes-card{
+        width: 33.333%;
+     /* height: 50%;*/
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+        
+    }
+    .sticky-header{
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .find-wrapper{
+        height: 200px;
+    }
+    .find-container{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .found-recipes-wrapper{
+        margin-top: 0;
+    }
+    .find{
+        width: 90%;
+        margin: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .find-input{
+        width: 50%;
+    }
+    .found-recipes-cards{
+        margin-top: 0;
+        box-shadow: none;
+    }
+
+    .card-error-wrapper{
+        width: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       margin-top: 5%;
+        background-color:  #ffffff;
+        margin-bottom: 75px;
+        box-shadow: none
+       
+    }
+    .card-error{
+        height: 515px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .error{
+        width: 90%;
+    }
+    .found-recipes{
+        background-color: white;
+    }
+ 
+    
+}
+@media screen and (max-width: 550px){
+     
+    .found-recipes-cards img{
+        width: 100px;
+        
+    }
+    
+    .found-recipes-card p{
+       
+        font-size: 18px;
+       
+    }
+    
+}
+@media screen and (max-width: 370px){
+    .found-recipes-card{
+        width: 50%;
+     /* height: 50%;*/
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+        
+    }
+    .found-recipes-cards img{
+        width: 100px;
+        
+    }
+    
+    .found-recipes-card p{
+       
+        font-size: 18px;
+       
+    }
+    
+}

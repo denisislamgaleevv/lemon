@@ -1,0 +1,43 @@
+ 
+  
+  .gallery {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .gallery .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+   
+    overflow: hidden;
+    text-align: center;
+    background: #eaeaea;
+     
+  }
+  .gallery .controls {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 100%;
+    text-align: right;
+  }
+  .gallery .control-button {
+    display: inline-block;
+    margin: 0 .02em;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: none;
+    transition: color .1s;
+   
+    color: #ccc;
+    color: rgba(99, 99, 99, 0.3);
+  }
+
+  

@@ -1,0 +1,52 @@
+
+
+.gallery-container{
+    display: flex;
+  
+    padding:  5% 0 5% 0;
+    width: 100%;
+    justify-content: center;
+    background-color:  #eaeaea;
+}
+.galleryNew{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.img-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    flex-wrap: wrap;
+
+
+    width: 100%;
+    background-color: white;
+    
+    padding-top: 20px;
+    
+}
+.img-card{
+    width: 20%;
+    /* height: 50%;*/
+     padding: 20px;
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:end;
+       
+}
+.img-card img{
+width: 200px;
+cursor: pointer;
+}

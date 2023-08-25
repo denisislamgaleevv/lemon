@@ -1,0 +1,26 @@
+
+
+.searcha{
+    background-color: white;
+    text-decoration: none;
+    border-bottom: 0px ;
+}
+.search-a:hover{
+    text-decoration: none;
+}
+.small-btn{
+    width: 120px;
+    height: 28px;
+    background-color: white;
+    border: 1px solid #c2c2c2; 
+    border-radius: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    padding: 2px;
+    cursor: pointer;
+    z-index: 10;
+}
+.small-btn:hover{
+    color: white; 
+    background-color: #c2c2c2; 
+}
