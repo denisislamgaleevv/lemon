@@ -9,6 +9,14 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 export const Header = ({menuVisibility, toggleMenu, setFindPageVisibility}) =>{
      const navigate = useNavigate()
+     const [isGrey, setIsGrey] = useState(true)
+    const handleMouseEnter = () => {
+      setIsGrey(false)
+     }
+          
+     const handleMouseLeave = () => {
+      setIsGrey(true)
+     }
 
     return(<>
    
@@ -23,8 +31,14 @@ export const Header = ({menuVisibility, toggleMenu, setFindPageVisibility}) =>{
               <a onClick = {() =>navigate('/gallery')}className = 'menu-a'>PHOTO GALLERIES</a>
             </div> :<></>}
         
-         <a  className = 'searcha'><button onClick = {() =>navigate('/search')} className='small-btn'  style={{ textDecoration: 'none' }}> 
-           <FontAwesomeIcon icon = {faSearch}  style = {{color: '#525252'}}/> FIND A RECIPE
+         <a  className = 'searcha'   onMouseEnter={handleMouseEnter} 
+           onMouseLeave={handleMouseLeave}><button onClick = {() =>navigate('/search')} className='small-btn'  style={{ textDecoration: 'none' }}> 
+           <FontAwesomeIcon icon = {faSearch}  
+          
+        
+           style = {isGrey? {color: '#878787'}: {  color: 'white'}}
+           
+           /> FIND A RECIPE
             
            
            </button></a>
