@@ -40,6 +40,7 @@ function recipeClick(elem){
               images.map((elem) =>
              <div className = 'img-card'>
               
+              
                 <img onClick = {()=>recipeClick(elem)} src = {elem.strMealThumb}/>
               
             </div>)  
