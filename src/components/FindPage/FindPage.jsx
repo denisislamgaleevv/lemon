@@ -115,7 +115,7 @@ export const FindPage = ({tRecipe, setTRecipe}) =>{
 
             </div>)  
         }
-        <ul className='pagination'>
+       {/* <ul className='pagination'>
           {[...Array(7)].map((_, i) => (
           <li 
           onClick={() => setPage(i+1)}
@@ -123,7 +123,7 @@ export const FindPage = ({tRecipe, setTRecipe}) =>{
             {i+1}
           </li>
           ))}
-        </ul>
+        </ul>*/}
         </div>
          
         </div> : <> {isUsed?

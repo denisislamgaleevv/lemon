@@ -47,6 +47,34 @@
        
 }
 .img-card img{
-width: 200px;
-cursor: pointer;
+    width: 200px;
+    cursor: pointer;
+}
+@media screen and (max-width: 1200px){
+    .img-card{
+        width: 25%;
+       
+    }
+}
+@media screen and (max-width: 1000px){
+    .img-card{
+        width: 33.33%;
+       
+    }
+}
+@media screen and (max-width: 600px){
+    .galleryNew{
+        width: 100%;
+    }
+    .img-cards{
+        padding: 0;
+    }
+    .img-card{
+        width: 33.33%;
+       padding: 0;
+    }
+    .img-card img{
+        width: 150px;
+        cursor: pointer;
+    }
 }
