@@ -4,7 +4,7 @@ import logo from '../../images/logo.png';
 export const Preview = () =>{
     return(
         <div className='preview-container'>  
-        <div className="gallery items-3">
+        <div className="gallery autoplay items-3">
           <div id="item-1" className="control-operator"></div>
           <div id="item-2" className="control-operator"></div>
           <div id="item-3" className="control-operator"></div>
