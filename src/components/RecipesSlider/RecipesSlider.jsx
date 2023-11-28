@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
 import { faComment } from '@fortawesome/free-solid-svg-icons'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
+import { faCarrot } from '@fortawesome/free-solid-svg-icons'
 import smallRecipePhoto1 from './images/small-recipes/small-recipes-photo-1.jpg';
 import smallRecipePhoto2 from './images/small-recipes/small-recipes-photo-2.jpg';
 import smallRecipePhoto3 from './images/small-recipes/small-recipes-photo-3.jpg';
@@ -50,7 +51,7 @@ export const RecipesSlider =( {windowWidth, setTRecipe, setIsChosenRecipe} )=> {
     <div className='small-recipes-wrapper'>
   
     <div className='small-recipes'>
-      <h2 className = 'pop-h2'>Popular today</h2>
+      <h2 className = 'pop-h2'>Random recipes</h2>
 {windowWidth > 600 ? 
 <> {meals.length !== 0 ?
       <Slider {...settings} class = 'small-slider'>
@@ -60,7 +61,7 @@ export const RecipesSlider =( {windowWidth, setTRecipe, setIsChosenRecipe} )=> {
               <img src={elem.strMealThumb} alt='small-recipes-photo-1'/>
               <p onClick = {() => handleNavigateToRecipe(elem)}>{elem.strMeal}</p>
               <div className='small-recipe-icons'>
-              <FontAwesomeIcon icon={faClock} />&nbsp;35 mins 
+              <FontAwesomeIcon icon={faCarrot} />&nbsp;9 ingredients
                 |&nbsp;
                 <FontAwesomeIcon icon={faComment} />&nbsp;7&nbsp;
                 <FontAwesomeIcon icon={faEye} />&nbsp;14
@@ -112,7 +113,7 @@ export const RecipesSlider =( {windowWidth, setTRecipe, setIsChosenRecipe} )=> {
               <img src={elem.strMealThumb} alt='small-recipes-photo-1'/>
               <p onClick = {() => handleNavigateToRecipe(elem)}>{elem.strMeal}</p>
               <div className='small-recipe-icons'>
-              <FontAwesomeIcon icon={faClock} />&nbsp;35 mins 
+              <FontAwesomeIcon icon={faCarrot} />&nbsp;9 ingredients
                 |&nbsp;
                 <FontAwesomeIcon icon={faComment} />&nbsp;7&nbsp;
                 <FontAwesomeIcon icon={faEye} />&nbsp;14

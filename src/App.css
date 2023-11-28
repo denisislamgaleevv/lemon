@@ -127,6 +127,72 @@ header{
 .slick-dots li button:before {
     top: 10px
 }
+@media screen and (max-width: 3000px){
+    .slick-prev:before{
+        margin-left: -20px;
+    }
+    .slick-dots li button:before {
+        top: 35px
+    }
+    .small-recipes{
+        height: 700px;
+        
+    }
+    .small-recipes-wrapper{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 2000px){
+    .slick-prev:before{
+        margin-left: -20px;
+    }
+    .slick-dots li button:before {
+        top: 35px
+    }
+    .small-recipes{
+        height: 700px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .small-recipes-wrapper{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 1600px){
+    .slick-prev:before{
+        margin-left: -20px;
+    }
+    .slick-dots li button:before {
+        top: 35px
+    }
+    .small-recipes{
+        height: 600px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .small-recipes-wrapper{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width: 1400px){
+    .slick-prev:before{
+        margin-left: -20px;
+    }
+    .slick-dots li button:before {
+        top: 35px
+    }
+    .small-recipes{
+        height: 550px;
+       
+    }
+    .small-recipes-wrapper{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
 @media screen and (max-width: 1000px){
     .slick-prev:before{
         margin-left: -20px;
@@ -137,6 +203,10 @@ header{
     .small-recipes{
         height: 470px;
         
+    }
+    .small-recipes-wrapper{
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
 @media screen and (max-width: 800px){
@@ -152,10 +222,14 @@ header{
     }
     .small-recipes{
         height: 420px;
-        
+        margin-bottom: 0;
     }
     .small-recipes-wrapper{
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+    .small-recipes-wrapper{
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
 .small-recipe{

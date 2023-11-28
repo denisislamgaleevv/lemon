@@ -16,7 +16,7 @@ export const Preview = () =>{
                 <div className='text-container'>  
                   <p>Indulge in the ultimate culinary delight with our exquisite Spaghetti With Shrimps. Elevate your taste experience as tender shrimp intertwine with perfectly cooked pasta, creating a harmonious dance of flavors.</p>
                 </div>
-                <button className='preview-btn' onClick={() =>alert("We don't have this recipe")}>GET IT RECIPE</button>
+               
               </div>
             </div>
           </figure>
@@ -28,7 +28,7 @@ export const Preview = () =>{
                 <div className='text-container'>  
                   <p>If you're looking for decadence, look no further — you've found the Holy Grail of desserts. Honestly, this cake makes us wonder why Bananas Foster hasn't always been served on top of ice cream cake.</p>
                 </div>
-                <button className='preview-btn' onClick='click1()'>GET IT RECIPE</button>
+                
               </div>
             </div>
           </figure>
@@ -40,7 +40,7 @@ export const Preview = () =>{
                 <div className='text-container'>  
                   <p>Embark on a journey of flavor with our iconic Beet Soup. Delight in the heartwarming embrace of tender beets, hearty vegetables, and succulent meat, all expertly blended in a rich, aromatic broth.</p>
                 </div>
-                <button className='preview-btn'>GET IT RECIPE</button>
+               
               </div>
             </div>
           </figure>
@@ -55,3 +55,5 @@ export const Preview = () =>{
     )
 }
 
+//  <button className='preview-btn'>GET IT RECIPE</button>
+//  <button className='preview-btn' onClick={() =>alert("We don't have this recipe")}>GET IT RECIPE</button>

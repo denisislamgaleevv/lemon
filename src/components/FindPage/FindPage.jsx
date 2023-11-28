@@ -108,9 +108,9 @@ export const FindPage = ({tRecipe, setTRecipe}) =>{
             <div className = 'found-recipes-card'>
               
             
-                <img src = {elem.strMealThumb}/>
+                <img onClick = {()=>recipeClick(elem)} class = 'mini-recipe-img'src = {elem.strMealThumb}/>
               
-                <a><p onClick = {()=>recipeClick(elem)}>{elem.strMeal}</p></a>
+                <a onClick = {()=>recipeClick(elem)}><p>{elem.strMeal}</p></a>
             
 
             </div>)  

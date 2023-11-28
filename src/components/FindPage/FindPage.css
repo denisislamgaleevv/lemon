@@ -16,7 +16,9 @@
   
     background-color:  #eaeaea;
 }
-
+.mini-recipe-img{
+    cursor: pointer;
+}
 .find{
     display: flex;
     flex-wrap: wrap;
